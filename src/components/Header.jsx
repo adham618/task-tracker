@@ -1,4 +1,5 @@
 import Button from "./Button"
+import Tasks from "./Tasks"
 
 const Header = ({ title }) => {
   const onClick = (e) => {
@@ -8,6 +9,7 @@ const Header = ({ title }) => {
     <header className="header">
       <h1>{title}</h1>
       <Button color="green" text="Add" onClick={onClick} />
+      <Tasks />
     </header>
   )
 }
